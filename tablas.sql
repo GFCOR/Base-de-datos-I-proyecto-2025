@@ -1,4 +1,3 @@
--- 1. Tabla de Usuarios
 CREATE TABLE steam_project.usuarios (
                                         usuario_id SERIAL PRIMARY KEY,  -- Clave primaria de la tabla
                                         nombre VARCHAR(255),
@@ -90,6 +89,5 @@ CREATE TABLE steam_project.eventos (
                                        fecha_fin DATE,
                                        tipo VARCHAR(50),  -- Valores posibles: Promoción, Torneo
                                        activo BOOLEAN,
-                                       FOREIGN KEY (id_videojuego) REFERENCES steam_project.videojuegos(id_videojuego)  -- Relación con la tabla de videojuegos
+                                       FOREIGN KEY (id_videojuego) REFERENCES steam_project.videojuegos(id_videojuego)  -- Relación con la tabla de videojuegos
 );
-
